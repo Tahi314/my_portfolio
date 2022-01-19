@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import IntroductionPage from "./components/pages/IntroductionPage";
+import LinksPage from "./components/pages/LinksPage";
 import HomePage from "./components/pages/HomePage";
 import NotFoundPage from "./components/pages/NotFoundPage"
 
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/introduction" element={<IntroductionPage />} />
+        <Route path="/Links" element={<LinksPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
