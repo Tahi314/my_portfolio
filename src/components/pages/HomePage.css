@@ -1,0 +1,38 @@
+.main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.TopCard{
+    text-align: center;
+}
+
+.TopCard img{
+    border: 5px solid orange;
+    border-radius: 50%;
+}
+
+.TopCard_list{
+    color: var(--bs-gray-600);
+}
+
+.ProfileCard td{
+    color: white;
+}
+
+#box01{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#box02{
+    display: inline-block;
+    vertical-align:middle;
+    width: 10em;
+}
+
+#box03{
+    display: inline-block;
+    vertical-align:middle;
+    color: #8e9297;
+}

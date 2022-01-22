@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
+// import './App.css';
 
 import LinksPage from "./components/pages/LinksPage";
 import HomePage from "./components/pages/HomePage";
