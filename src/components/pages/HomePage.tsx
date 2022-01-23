@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import { Button, Card, Stack, Table } from 'react-bootstrap'
+import React from 'react'
+import { Card, Stack, Table } from 'react-bootstrap'
 
 import main_icon from '../../assets/main_icon.jpg'
 import inventor_logo from '../../assets/inventor_logo.png'
