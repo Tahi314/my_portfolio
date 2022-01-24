@@ -35,7 +35,7 @@ const HomePage = (): JSX.Element => {
                         <tbody>
                             <tr>
                                 <td>Name</td>
-                                <td>hoge hoge</td>
+                                <td>Anonymous</td>
                             </tr>
                             <tr>
                                 <td>Age</td>
@@ -147,14 +147,24 @@ const HomePage = (): JSX.Element => {
                     <Stack gap={2}>
                         <Card border='secondary' bg='dark'>
                             <Card.Body>
+                                <Card.Title>ポートフォリオ</Card.Title>
+                                <Card.Subtitle>
+                                    <span className='grayout'>趣味</span>
+                                    <p><span className='grayout'>2021/11~</span></p>
+                                </Card.Subtitle>
+                                <Card.Text>React.jsを使って初めてのWebページとしてこのポートフォリオを作りました。</Card.Text>
+                                <Card.Link href='https://github.com/Tahi-knct/my_portfolio'>GitHub</Card.Link>
+                            </Card.Body>
+                        </Card>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
                                 <Card.Title>自作慣性式モーショントラッカー（WIP）</Card.Title>
                                 <Card.Subtitle>
                                     <span className='grayout'>趣味</span>
                                     <p><span className='grayout'>2021/11~</span></p>
                                 </Card.Subtitle>
                                 <Card.Text>ESP32を使って下半身用のワイヤレスモーショントラッカーを製作中</Card.Text>
-                                <Card.Img variant="top" src={work_pic01} />
-                                <Card.Link href='https://github.com/Tahi-knct/my_portfolio'>GutHub</Card.Link>
+                                <Card.Img variant="top" src={work_pic01} alt='DIY-Tracker pic' />
                             </Card.Body>
                         </Card>
                     </Stack>
