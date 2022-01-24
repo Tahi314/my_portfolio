@@ -10,7 +10,6 @@ import cpp_logo from '../../assets/cpp_logo.png'
 import work_pic01 from '../../assets/work_pic01.png'
 
 import "./HomePage.css"
-import { colors } from '@material-ui/core'
 
 const HomePage = (): JSX.Element => {
 
