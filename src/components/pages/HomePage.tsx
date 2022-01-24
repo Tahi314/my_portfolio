@@ -1,11 +1,16 @@
 import React from 'react'
-import { Card, Stack, Table } from 'react-bootstrap'
+import { Card, Col, Container, Row, Stack, Table } from 'react-bootstrap'
 
-import main_icon from '../../assets/main_icon.jpg'
+import main_icon from '../../assets/main_icon.png'
 import inventor_logo from '../../assets/inventor_logo.png'
 import blender_logo from '../../assets/blender_logo.png'
+import unity_logo from '../../assets/unity_logo.png'
+import kicad_logo from '../../assets/kicad_logo.png'
+import cpp_logo from '../../assets/cpp_logo.png'
+import work_pic01 from '../../assets/work_pic01.png'
 
 import "./HomePage.css"
+import { colors } from '@material-ui/core'
 
 const HomePage = (): JSX.Element => {
 
@@ -13,7 +18,7 @@ const HomePage = (): JSX.Element => {
 
     return (
         <div className='main'>
-            <Stack gap={3}>
+            <Stack gap={4}>
                 <div className='TopCard'>
                     <img src={main_icon} alt="my icon" width="200" height="200" />
                     <p className='h1'>Tahi</p>
@@ -30,7 +35,7 @@ const HomePage = (): JSX.Element => {
                         <tbody>
                             <tr>
                                 <td>Name</td>
-                                <td>hoge hoge</td>
+                                <td>Anonymous</td>
                             </tr>
                             <tr>
                                 <td>Age</td>
@@ -52,28 +57,135 @@ const HomePage = (): JSX.Element => {
                     <Stack gap={2}>
                         <Card border='secondary' bg='dark'>
                             <Card.Body>
-                                <div id='box01'><img src={inventor_logo} alt='inventor logo' width="48" height="49" /></div>
-                                <div id='box02'><b>Autodesk Inventor</b></div>
-                                <div id='box03'>2018~</div>
+                                <Container>
+                                    <Row>
+                                        <Col xs={9}>
+                                            <div className='SkillNameBox'>
+                                                <img src={cpp_logo} alt='Cpp logo' height="49" />
+                                                <b>C++</b>
+                                            </div>
+                                        </Col>
+                                        <Col xs={3}>
+                                            <div className='SkillSinceBox'>2016~</div>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </Card.Body>
                         </Card>
                         <Card border='secondary' bg='dark'>
                             <Card.Body>
-                                <div id='box01'><img src={blender_logo} alt='inventor logo' width="48" height="49" /></div>
-                                <div id='box02'><b>Blender</b></div>
-                                <div id='box03'>2020~</div>
+                                <Container>
+                                    <Row>
+                                        <Col xs={9}>
+                                            <div className='SkillNameBox'>
+                                                <img src={inventor_logo} alt='inventor logo' height="49" />
+                                                <b>Inventor</b>
+                                            </div>
+                                        </Col>
+                                        <Col xs={3}>
+                                            <div className='SkillSinceBox'>2017~</div>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                            </Card.Body>
+                        </Card>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
+                                <Container>
+                                    <Row>
+                                        <Col xs={9}>
+                                            <div className='SkillNameBox'>
+                                                <img src={blender_logo} alt='blender logo' height="49" />
+                                                <b>Blender</b>
+                                            </div>
+                                        </Col>
+                                        <Col xs={3}>
+                                            <div className='SkillSinceBox'>2020~</div>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                            </Card.Body>
+                        </Card>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
+                                <Container>
+                                    <Row>
+                                        <Col xs={9}>
+                                            <div className='SkillNameBox'>
+                                                <img src={unity_logo} alt='Unity logo' height="49" />
+                                                <b>Unity</b>
+                                            </div>
+                                        </Col>
+                                        <Col xs={3}>
+                                            <div className='SkillSinceBox'>2020~</div>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                            </Card.Body>
+                        </Card>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
+                                <Container>
+                                    <Row>
+                                        <Col xs={9}>
+                                            <div className='SkillNameBox'>
+                                                <img src={kicad_logo} alt='kicad logo' height="49" />
+                                                <b>kicad</b>
+                                            </div>
+                                        </Col>
+                                        <Col xs={3}>
+                                            <div className='SkillSinceBox'>2021~</div>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </Card.Body>
                         </Card>
                     </Stack>
                 </div>
                 <div className='WorksCard'>
                     <h2>Works</h2>
-                </div>
-                <div className='ArticlesCard'>
-                    <h2>Articles</h2>
+                    <Stack gap={2}>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
+                                <Card.Title>ポートフォリオ</Card.Title>
+                                <Card.Subtitle>
+                                    <span className='grayout'>趣味</span>
+                                    <p><span className='grayout'>2021/11~</span></p>
+                                </Card.Subtitle>
+                                <Card.Text>React.jsを使って初めてのWebページとしてこのポートフォリオを作りました。</Card.Text>
+                                <Card.Link href='https://github.com/Tahi-knct/my_portfolio'>GitHub</Card.Link>
+                            </Card.Body>
+                        </Card>
+                        <Card border='secondary' bg='dark'>
+                            <Card.Body>
+                                <Card.Title>自作慣性式モーショントラッカー（WIP）</Card.Title>
+                                <Card.Subtitle>
+                                    <span className='grayout'>趣味</span>
+                                    <p><span className='grayout'>2021/11~</span></p>
+                                </Card.Subtitle>
+                                <Card.Text>ESP32を使って下半身用のワイヤレスモーショントラッカーを製作中</Card.Text>
+                                <Card.Img variant="top" src={work_pic01} alt='DIY-Tracker pic' />
+                            </Card.Body>
+                        </Card>
+                    </Stack>
                 </div>
                 <div className='ContactsCard'>
                     <h2>Contacts</h2>
+                    <Table borderless>
+                        <tbody>
+                            <tr>
+                                <td>Email</td>
+                                <td>ynagiz22@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td><a href="https://twitter.com/Tahi_knct">@Tahi_knct</a></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
+                <div className='Copyright'>
+                    <span className='grayout'>Copyright © 2022 Tahi_314</span>
                 </div>
             </Stack >
         </div >
