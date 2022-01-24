@@ -10,6 +10,7 @@
 .TopCard img{
     border: 5px solid orange;
     border-radius: 50%;
+    margin: 20px 0;
 }
 
 .TopCard_list{
@@ -20,19 +21,34 @@
     color: white;
 }
 
-#box01{
-    display: inline-block;
-    margin-right: 15px;
+.SkillNameBox{
+    vertical-align:middle;
 }
 
-#box02{
-    display: inline-block;
-    vertical-align:middle;
-    width: 10em;
+.SkillNameBox img{
+    margin-right: 20px;
 }
 
-#box03{
-    display: inline-block;
+.SkillSinceBox{
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     vertical-align:middle;
-    color: #8e9297;
+    color: var(--bs-gray-600);
+}
+
+.grayout{
+    color: var(--bs-gray-600);
+}
+
+.ContactsCard td{
+    color: white;
+}
+
+.Copyright{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
