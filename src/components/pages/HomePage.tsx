@@ -38,7 +38,7 @@ const HomePage = (): JSX.Element => {
                             </tr>
                             <tr>
                                 <td>Age</td>
-                                <td>19</td>
+                                <td>20</td>
                             </tr>
                             <tr>
                                 <td>Birth</td>
