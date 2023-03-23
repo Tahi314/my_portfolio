@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.8aed219e.css",
+    "main.js": "/my_portfolio/static/js/main.f3e59869.js",
+    "static/js/787.65557d19.chunk.js": "/my_portfolio/static/js/787.65557d19.chunk.js",
+    "static/media/main_icon.png": "/my_portfolio/static/media/main_icon.0bc258358078ddb1a07e.png",
+    "static/media/cpp_logo.png": "/my_portfolio/static/media/cpp_logo.53bb9a47adf217ee6900.png",
+    "static/media/work_pic01.png": "/my_portfolio/static/media/work_pic01.dcab4a943ad9724704e2.png",
+    "static/media/kicad_logo.png": "/my_portfolio/static/media/kicad_logo.aa7fe0bca986edff1091.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.8aed219e.css.map": "/my_portfolio/static/css/main.8aed219e.css.map",
+    "main.f3e59869.js.map": "/my_portfolio/static/js/main.f3e59869.js.map",
+    "787.65557d19.chunk.js.map": "/my_portfolio/static/js/787.65557d19.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aed219e.css",
+    "static/js/main.f3e59869.js"
+  ]
+}
