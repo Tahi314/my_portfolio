@@ -178,13 +178,13 @@ const HomePage = (): JSX.Element => {
                             </tr>
                             <tr>
                                 <td>Twitter</td>
-                                <td><a href="https://twitter.com/Tahi_knct">@Tahi_knct</a></td>
+                                <td><a href="https://twitter.com/Tahi_314_Dev">@Tahi_314_Dev</a></td>
                             </tr>
                         </tbody>
                     </Table>
                 </div>
                 <div className='Copyright'>
-                    <span className='grayout'>Copyright © 2022 Tahi_314</span>
+                    <span className='grayout'>Copyright © 2023 Tahi_314</span>
                 </div>
             </Stack >
         </div >
